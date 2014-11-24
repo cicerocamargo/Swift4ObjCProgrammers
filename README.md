@@ -26,4 +26,4 @@ Some thoughts:
 
 ## `long` and `long long`
 
-I've used `long long` in rare situations, like in some call of `NSFileManager`. This `long` type, and others like `char` and `double`, come from the C language, and apple provides a [guide](https://developer.apple.com/library/ios/documentation/swift/conceptual/buildingcocoaapps/InteractingWithCAPIs.html) to interact with C APIs. However, in this guide Apple says to "use `Int` wherever possible", and that's exactly what has been done in `NSFileManager`, where the `NSDictionary` extension that used to return the file size in `unsigned long long` now retu
+I've used `long long` in rare situations, like in some calls to a `NSFileManager`. This `long` type, and others like `char` and `double`, come from the C language, and apple provides a [guide](https://developer.apple.com/library/ios/documentation/swift/conceptual/buildingcocoaapps/InteractingWithCAPIs.html) to interact with C APIs. However, in this guide Apple says to "use `Int` wherever possible", and that's exactly what has been done in `NSFileManager`, where the `NSDictionary` extension that used to return the file size in `unsigned long long` now returns `UInt64`
