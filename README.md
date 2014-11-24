@@ -9,6 +9,10 @@ Fell free to contribute to this page or correct me if you smell bad code from th
 
 ## Optionals
 
+## `id`
+
+Now `id` is not a type anymore. We can use it as a property name \o/. The equivalent in Swift is `AnyObject`, or `AnyObject?` if your variable can be nil.
+
 ## Dicionaries
 
 The major difference among collection types in Swift like Dictionaries is that they are typed. The Syntax is the following:
