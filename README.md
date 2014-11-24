@@ -9,6 +9,10 @@ Fell free to contribute to this page or correct me if you smell bad code from th
 
 ## Optionals
 
+## `;`
+
+You don't need to put a semicolon in the end of one-line statements, but you can use a semicolon to separate multiple statements in the same line.
+
 ## `id`
 
 Now `id` is not a type anymore. We can use it as a property name \o/. The equivalent in Swift is `AnyObject`, or `AnyObject?` if your variable can be nil.
