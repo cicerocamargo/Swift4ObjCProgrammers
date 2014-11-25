@@ -23,6 +23,10 @@ We know exactly what's happening here. `item` must always have a value and if we
 
 #### Optional unwrapping and `if let`
 
+## Casting
+
+In general you use the `as` keyword. However, when you have a variable of type `T?` and you get it from an array that holds objects of a superclass of `T` or `AnyObject`, this happens for instance when you instantiate a `UNib`, you have to downcast with `as?`
+
 ## `;`
 
 You don't need to put a semicolon in the end of one-line statements, but you can use a semicolon to separate multiple statements in the same line.
