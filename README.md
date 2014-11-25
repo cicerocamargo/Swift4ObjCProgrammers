@@ -9,6 +9,10 @@ Fell free to contribute to this page or correct me if you smell bad code from th
 
 ## Optionals
 
+From Apple's reference: *in Objective-C, `nil` is a pointer to a non-existant object. In Swift `nil` is not a pointer – it is the absence of a value of a certain type.*
+
+Here is a [good article](https://medium.com/swift-programming/facets-of-swift-part-1-optionals-b8ba5b0051a2) about optionals.
+
 ## `Int` as `Bool`
 
 You can NOT use an integer value as a boolean, like this: `let array = []; if array.count { /* some logic */ }`. Write the whole (and more readable) expression instead: `if array.count > 0 { /* some logic */ }`
@@ -37,6 +41,10 @@ Some thoughts:
 * Because the collections are typed in Swift, you know in advance the type of the value you're getting from a dictionary, so you don't need to cast values to use them
 * Immutability is attained by using `let` instead of `var`
 * Dictionary literals look like this: `[key1: value1, key2: value2, key3: value3]`
+
+## Arrays
+
+* The equivalent to `addObject:` is `append`;
 
 ## `long` and `long long`
 
