@@ -9,9 +9,19 @@ Fell free to contribute to this page or correct me if you smell bad code from th
 
 ## Optionals
 
-From Apple's reference: *in Objective-C, `nil` is a pointer to a non-existant object. In Swift `nil` is not a pointer – it is the absence of a value of a certain type.*
+In Swift variables (not constants) can be of type `T` or `T?`. The first one implies that the variable always have a value whereas in the second one the variable can have no value set. *No value* is exactly what `nil` means in Swift, as we can see in Apple's reference: *in Objective-C, `nil` is a pointer to a non-existant object. In Swift `nil` is not a pointer – it is the absence of a value of a certain type.*.
 
-Here is a [good article](https://medium.com/swift-programming/facets-of-swift-part-1-optionals-b8ba5b0051a2) about optionals.
+What does all this mean? We know exactly when we'll receive (or potencially not receive) a value in the arguments of a method or from the return of a method. [This article](https://medium.com/swift-programming/facets-of-swift-part-1-optionals-b8ba5b0051a2) gives a good example of how good this is, let's fastly analyze it. Consider the following method signature in Objective-C:
+
+    - (NSInteger)indexOfItem:(Item *)item;
+
+Looking to this code we notice that nothing prevents us to send a nil pointer as argument, although there can be an assert to check if the parameter is nil, what would crash the app in this case. We also don't know exactly what will be returned if `item` is not found (`NSNotFound` which is defined as `NSIntegerMax`? Or `NSIntegerMin`? Or `-1`?). Now look to this method signature in Swift:
+
+    func indexOfItem(item: Item) -> Int?
+    
+We know exactly what's happening here. `item` must always have a value and if we try to pass as argument a value of type `Item?` we get an error at compile time. We also notice that this method can return "no value", i.e., `nil`, meaning that `item` is not present.
+
+#### Optional unwrapping and `if let`
 
 ## `Int` as `Bool`
 
