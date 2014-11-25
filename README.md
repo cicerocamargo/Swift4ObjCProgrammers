@@ -23,13 +23,13 @@ We know exactly what's happening here. `item` must always have a value and if we
 
 #### Optional unwrapping and `if let`
 
-## `Int` as `Bool`
-
-You can NOT use an integer value as a boolean, like this: `let array = []; if array.count { /* some logic */ }`. Write the whole (and more readable) expression instead: `if array.count > 0 { /* some logic */ }`
-
 ## `;`
 
 You don't need to put a semicolon in the end of one-line statements, but you can use a semicolon to separate multiple statements in the same line.
+
+## `Int` as `Bool`
+
+You can NOT use an integer value as a boolean, like this: `let array = []; if array.count { /* some logic */ }`. Write the whole (and more readable) expression instead: `if array.count > 0 { /* some logic */ }`
 
 ## `id`
 
