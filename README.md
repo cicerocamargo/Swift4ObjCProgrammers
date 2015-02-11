@@ -87,3 +87,7 @@ At the time I'm writing this (11/25/2014) there's no try-catch in Swift. If you 
 ## Class methods and class properties
 
 ## Enums
+
+## Ranges
+
+Use *..<* to make a range that omits its upper value, and use *...* to make a range that includes both values.
